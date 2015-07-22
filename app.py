@@ -8,8 +8,8 @@ tags=['Sloth','Platypus','Giraffe','Bonobo']
 
 @app.route('/')
 def root():
-    #a=flickr(random.choice(tags))
-    return render_template('photo.html', image=flickr(random.choice(tags)))
+    tag=flickr(random.choice(tags))
+    return render_template('photo.html', image=tag, title_img='arrpi.php?text='+tag[0]['title'])
 
 
 if __name__=='__main__':
