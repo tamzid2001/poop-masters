@@ -16,7 +16,7 @@ def root():
     else:
         return 'yo'
     #tag=flickr(random.choice(tags))
-    return render_template('photo.html', image=tag, title_img='arrpi.php?text='+tag[0]['title'], x=random.randint(0,5))
+    return render_template('photo.html', image=tag, x=random.randint(0,100))
 
 
 if __name__=='__main__':
