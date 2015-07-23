@@ -7,9 +7,10 @@
 <img src="http://farm{{image[x]['farm']}}.staticflickr.com/{{image[x]['server']}}/{{image[x]['id']}}_{{image[x]['secret']}}.jpg">
 {{image[x]['title']}}
 <br><br>
-<h1>{{y}}</h1>
+<h3>{{y}}</h3>
 <form action="/" method="POST">
-  <input type="text" name="search">
+  <input type="text" name="search" placeholder="artist">
+  <input type="text" name="song" placeholder="song">
   <input type="submit" value="Search">
 </form>
 </body>
